@@ -1,0 +1,81 @@
+/* - Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Manrope: 'Manrope', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+}
+.Canvas {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.65rem;
+    padding: 2.85rem 2.25rem 2.45rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 36px 53px 10px 10px rgba(0,0,0,0.04),
+    17px 21px 31px 59px rgba(0,0,0,0.04);
+    width: 100%;
+    max-width: 32.5rem;
+    position: relative;
+}
+.Canvas h6 {
+    font-size: 0.825rem;
+    font-family: var(--Manrope);
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.285rem;
+    text-transform: uppercase;
+}
+.Canvas p {
+    font-family: var(--Manrope);
+    color: hsl(193, 38%, 86%);
+    font-size: 1.625rem;
+    line-height: 1.5;
+    padding-bottom: 6px;
+}
+.Canvas button {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.Canvas button:hover {
+    box-shadow: 3px 12px 54px -9px rgba(82,255,168,0.75);
+}
+@media screen and (max-width: 950px) {
+    body {
+        padding: 3rem;
+    }
+}
